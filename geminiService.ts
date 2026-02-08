@@ -1,9 +1,8 @@
-
 import { GoogleGenAI } from "@google/genai";
 
 export const getPosturalAdvice = async (userMessage: string) => {
   try {
-    // Inicializa o cliente dentro da função para garantir que pegue a variável de ambiente mais recente
+    // Inicialização direta conforme diretrizes
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
     
     const response = await ai.models.generateContent({
@@ -25,6 +24,6 @@ export const getPosturalAdvice = async (userMessage: string) => {
     return response.text;
   } catch (error) {
     console.error("Gemini Error:", error);
-    return "Desculpe, estou com dificuldade de conexão agora. Verifique se a sua chave de API está configurada corretamente nas variáveis de ambiente ou tente novamente em breve.";
+    return "Olá! No momento não consegui processar sua dúvida. Por favor, tente novamente em alguns instantes ou verifique as aulas gravadas na biblioteca.";
   }
 };
