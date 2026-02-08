@@ -1,0 +1,8 @@
+{
+  "name": "Renata Couto - Programa Postural Corporativo",
+  "description": "Uma plataforma completa de Ginástica Holística e Educação Postural para empresas e alunos, focada em bem-estar corporativo, pausas ativas e saúde postural.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
